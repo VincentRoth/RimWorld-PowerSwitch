@@ -112,6 +112,14 @@ namespace PowerSwitch
 
         #region Setup
 
+        private void UpdateModSettingsVars()
+        {
+            // Update the variables from the ModSettings
+            enemyDetectionSwitchViaDesignator = PowerSwitch_ModSettings.switchEnemyDetectionViaDesignation;
+            radarDistance = Map.info.Size.x * PowerSwitch_ModSettings.enemyDetectionRangePercentofMap; // the search radius for enemies 
+            radarDistancePawn = PowerSwitch_ModSettings.pawnNearbyDetectionRange;
+        }
+
         /// <summary>
         /// Do something after the object is spawned
         /// </summary>
@@ -119,9 +127,7 @@ namespace PowerSwitch
         {
             base.SpawnSetup(map, respawningAfterLoad);
 
-            radarDistance = map.info.Size.x * PowerSwitch_ModSettings.enemyDetectionRangePercentofMap; // the search radius for enemies 
-            radarDistancePawn = PowerSwitch_ModSettings.pawnNearbyDetectionRange;
-            enemyDetectionSwitchViaDesignator = PowerSwitch_ModSettings.switchEnemyDetectionViaDesignation;
+            UpdateModSettingsVars();
 
             // Translations
             txtSwitchOnOff = "PowerSwitch_SwitchOnOff".Translate(); // "Switch: On/Off.";
@@ -228,7 +234,7 @@ namespace PowerSwitch
         /// This is used, when the Ticker is set to Normal
         /// This Tick is done often (60 times per second)
         /// </summary>
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
 
@@ -245,6 +251,8 @@ namespace PowerSwitch
                 ticksNoUpdate--;
                 return;
             }
+
+            UpdateModSettingsVars();
 
 
             // Search for enemies within reach..
@@ -431,7 +439,7 @@ namespace PowerSwitch
                 else
                     optC.icon = texUI_NoPowerPawnOn;
                 optC.hotKey = KeyBindingDefOf.Misc2; //KeyCode.C;
-                optC.disabled = false;
+                optC.Disabled = false;
                 if (!pawnSearchModeDistanceActive)
                     optC.defaultDesc = txtAutoOnMotionRoom;
                 else
@@ -455,7 +463,7 @@ namespace PowerSwitch
                 else
                     optY.icon = texUI_NoPowerEnemyOn;
                 optY.hotKey = KeyBindingDefOf.Misc3; //KeyCode.Y;
-                optY.disabled = false;
+                optY.Disabled = false;
                 optY.defaultDesc = txtAutoOnEnemyNearbyRange + " " + ((int)radarDistance).ToString();
                 optY.activateSound = SoundDef.Named("Click");
                 optY.action = SwitchEnemyOnActiveOnOff;
@@ -476,7 +484,7 @@ namespace PowerSwitch
                 else
                     optX.icon = texUI_NoPowerEnemyOff;
                 optX.hotKey = KeyBindingDefOf.Misc4; //KeyCode.X;
-                optX.disabled = false;
+                optX.Disabled = false;
                 optX.defaultDesc = txtAutoOffEnemyNearbyRange + " " + ((int)radarDistance).ToString();
                 optX.activateSound = SoundDef.Named("Click");
                 optX.action = SwitchEnemyOffActiveOnOff;
@@ -497,7 +505,7 @@ namespace PowerSwitch
                 else
                     optM.icon = texUI_NoTimerOn;
                 optM.hotKey = KeyBindingDefOf.Misc5; //KeyCode.M;
-                optM.disabled = false;
+                optM.Disabled = false;
                 optM.defaultDesc = txtTimerClickSetOnTime;
                 optM.activateSound = SoundDef.Named("Click");
                 optM.action = TimerOnClicked;
@@ -517,7 +525,7 @@ namespace PowerSwitch
                 else
                     optN.icon = texUI_NoTimerOff;
                 optN.hotKey = KeyBindingDefOf.Misc6; //KeyCode.N;
-                optN.disabled = false;
+                optN.Disabled = false;
                 optN.defaultDesc = txtTimerClickSetOffTime;
                 optN.activateSound = SoundDef.Named("Click");
                 optN.action = TimerOffClicked;

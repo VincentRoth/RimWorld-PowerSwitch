@@ -12,7 +12,7 @@ namespace PowerSwitch
     public class PowerSwitch_ModSettings : ModSettings
     {
 
-        public static bool switchEnemyDetectionViaDesignation = true;
+        public static bool switchEnemyDetectionViaDesignation = false;
         public static float enemyDetectionRangePercentofMap = 0.45f;
         public static float pawnNearbyDetectionRange = 7f;
 

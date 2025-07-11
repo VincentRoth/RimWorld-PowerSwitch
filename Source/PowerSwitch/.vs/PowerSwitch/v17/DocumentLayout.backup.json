@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\_Programmierung\\_GitHub_Repositories\\RimWorld-PowerSwitch\\Source\\PowerSwitch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72136020-1DCE-4DCF-94AC-E54D6507F083}|PowerSwitch\\PowerSwitch.csproj|d:\\_programmierung\\_github_repositories\\rimworld-powerswitch\\source\\powerswitch\\powerswitch\\building_powerswitch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72136020-1DCE-4DCF-94AC-E54D6507F083}|PowerSwitch\\PowerSwitch.csproj|solutionrelative:powerswitch\\building_powerswitch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72136020-1DCE-4DCF-94AC-E54D6507F083}|PowerSwitch\\PowerSwitch.csproj|d:\\_programmierung\\_github_repositories\\rimworld-powerswitch\\source\\powerswitch\\powerswitch\\powerswitch_modsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72136020-1DCE-4DCF-94AC-E54D6507F083}|PowerSwitch\\PowerSwitch.csproj|solutionrelative:powerswitch\\powerswitch_modsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Building_PowerSwitch.cs",
+              "DocumentMoniker": "D:\\_Programmierung\\_GitHub_Repositories\\RimWorld-PowerSwitch\\Source\\PowerSwitch\\PowerSwitch\\Building_PowerSwitch.cs",
+              "RelativeDocumentMoniker": "PowerSwitch\\Building_PowerSwitch.cs",
+              "ToolTip": "D:\\_Programmierung\\_GitHub_Repositories\\RimWorld-PowerSwitch\\Source\\PowerSwitch\\PowerSwitch\\Building_PowerSwitch.cs",
+              "RelativeToolTip": "PowerSwitch\\Building_PowerSwitch.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAIwL0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T20:55:56.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PowerSwitch_ModSettings.cs",
+              "DocumentMoniker": "D:\\_Programmierung\\_GitHub_Repositories\\RimWorld-PowerSwitch\\Source\\PowerSwitch\\PowerSwitch\\PowerSwitch_ModSettings.cs",
+              "RelativeDocumentMoniker": "PowerSwitch\\PowerSwitch_ModSettings.cs",
+              "ToolTip": "D:\\_Programmierung\\_GitHub_Repositories\\RimWorld-PowerSwitch\\Source\\PowerSwitch\\PowerSwitch\\PowerSwitch_ModSettings.cs",
+              "RelativeToolTip": "PowerSwitch\\PowerSwitch_ModSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T20:55:34.612Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
